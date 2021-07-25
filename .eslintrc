@@ -1,0 +1,22 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["eslint:recommended", "plugin:prettier/recommended", "prettier"],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "import/prefer-default-export": "off"
+  }
+}

@@ -1,0 +1,57 @@
+body {
+  height: 100vh;
+  background-color: #d9cfca;
+}
+
+.app {
+  padding-top: 200px;
+}
+
+.tasks {
+  background-color: white;
+  border: 1px solid red;
+  border-radius: 10px;
+  padding: 15px;
+
+  .taskTitle {
+    display: flex;
+    justify-content: center;
+  }
+
+  .taskItem {
+    min-height: 40px;
+    background-color: azure;
+    margin: 20px 0;
+    padding: 10px;
+  }
+
+  .switch:focus {
+    box-shadow: none;
+  }
+
+  .taskDone {
+    text-decoration: line-through;
+  }
+
+  .doneIcon {
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  .doneIcon:hover {
+    background-color: chartreuse;
+  }
+
+  .deleteIcon {
+    cursor: pointer;
+  }
+
+  .deleteIcon:hover {
+    fill: crimson;
+  }
+
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
