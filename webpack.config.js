@@ -14,8 +14,8 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: "webpack Boilerplate",
-      template: path.resolve(__dirname, "./src/template.html"), // шаблон
-      filename: "index.html", // название выходного файла
+      template: path.resolve(__dirname, "./src/template.html"),
+      filename: "index.html",
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin(),

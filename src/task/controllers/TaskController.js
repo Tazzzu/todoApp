@@ -2,9 +2,8 @@ import { taskService } from "../services/TaskService";
 import { emitter } from "../../utils/EventEmitter";
 
 export class TaskController {
-  constructor(taskService, localStorageService) {
+  constructor(taskService) {
     this.taskService = taskService;
-    this.localStorageService = localStorageService;
   }
 
   init = () => {

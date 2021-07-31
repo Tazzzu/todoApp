@@ -37,11 +37,7 @@ class TaskView {
 
     <div class="actions">
       <button id="addRandomTask" class="btn btn-warning">Add Task</button>
-      <div>
-        <button id="deleteAllTask" class="btn btn-danger">
-          Delete all
-        </button>
-      </div>
+      <button id="deleteAllTask" class="btn btn-danger">Delete all</button>
     </div>
   </div>`;
 
@@ -90,7 +86,7 @@ class TaskView {
               task.isDone ? "taskDone" : ""
             }" for="taskSwitcher-${task.key}">${task.activity}</label>
           </div>
-          <div>
+          <div class="tasksActionsIcon">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle me-2 doneIcon" viewBox="0 0 16 16" id="doneIcon-${
               task.key
             }">
